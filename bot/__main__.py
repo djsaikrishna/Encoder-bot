@@ -231,7 +231,7 @@ async def something():
                         file=f,
                         name=out,
                         progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                            progress(d, t, nnn, ttt, f"**📤 Uploading**\n__{out.replace(f'encode/', '')}__")
+                            progress(d, t, nnn, ttt, f"**📤 Uploading**\n__{out.replace(f'downloads/', '')}__")
                         ),
                     )
                 await nnn.delete()
